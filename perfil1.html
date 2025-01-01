@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- Encabezado de navegación -->
+    <header class="navbar">
+        <h1 onclick="cambiar_texto(this)">Perfil</h1>
+        <nav>
+            <a href="#" onclick="bienvenido()">Inicio</a>
+            <a href="#" onclick="cambiar_texto(this)">Mi Perfil</a>
+            <a href="#">Encontrar Conexiones</a>
+            <button class="logout-btn" onclick="eliminar(this)">Cerrar Sesión</button>
+        </nav>
+    </header>
+    <main class="main-container">
+        <!-- Columna izquierda -->
+        <div class="left-column">
+            <section class="profile-card">
+                <div class="card-header"></div>
+
+        <!-- Contenido de la tarjeta -->
+        <div class="card-content">
+            <img src="img/perfil.jpg" alt="Foto de perfil" class="profile-img" onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)">
+            <h2>Katalina Cortes T</h2>
+            <p class="location">Coelemu, Chile</p>
+            <p class="job-title">Tecnico en Logistica y Operaciones Industriales | Potencial Desarrolladora full stack</p>
+            <p class="description">
+                Apasionada por el trabajo en equipo, la buena comunicacion, el orden en los locales laborales;
+                me resulta fascinante la lectura, los viajes, el aprendizaje y las tardes al aire libre.
+                Maneja el Espanol, Ingles y Portugues sin problema.
+                Siempre con la mejor disposicion para aprender y mejorar.
+            </p>
+            <button class="edit-button"><img src="img/edit1.png" alt="edit profile" width="50px" height="50px" ></button>
+        </div>
+            </section>
+
+            <section class="education-card">
+                <h3>Educación</h3>
+                <p><strong>Inacap</strong> - Tecnico en Logistica y operaciones industriales</p>
+                <p>Mar 2020 - May 2022</p>
+                <p>Capacitada para administrar y supervisar bodegas de toda clase</p>
+                <p><strong>Cambridge</strong> - Lengua y Literatura</p>
+                <p>Mar 2018 - Nov 2019</p>
+                <p>Uso profesional y comunicacional de la lengua Inglesa y Portuguesa</p>
+            </section>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="right-column">
+            <section class="connections">
+                <div class="card">
+                    <h3>Solicitudes de Conexión (2)</h3>
+                    <div class="request">
+                        <img src="img/ian.jpg" alt="ian Somerhalder">
+                        <p>Ian Somerhalder</p>
+                        <div class="actions">
+                        <button class="accept">✔</button>
+                        <button class="decline">✖</button>
+                    </div>
+                </div>
+                    <div class="request">
+                        <img src="img/stephen.jpg" alt="Stephen James">
+                        <p>Stephen James</p>
+                        <div class="actions">
+                            <button class="accept">✔</button>
+                            <button class="decline">✖</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="card">
+                <h3>Tus Conexiones (500+)</h3>
+                <ul>
+                    <li><img src="img/julia.jpg" alt="Julia Roberts">Julia Roberts</li>
+                    <li><img src="img/harry.jpg" alt="harry Potter"> harry Potter</li>
+                    <li><img src="img/alex.jpg" alt="Alex Pettyfer"> Alex Pettyfer</li>
+                    <li><img src="img/sofia.jpg" alt="Sofia Vergara"> Sofia Vergara</li>
+                    <li><img src="img/martin.jpg" alt="Chris Martin"> Chris Martin</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>

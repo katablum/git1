@@ -1,0 +1,190 @@
+/* Configuración base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado de navegación */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar .logout-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 columnas: izquierda (perfil y educación), derecha (solicitudes y conexiones) */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Columna izquierda */
+.left-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los cuadros se apilen verticalmente */
+    gap: 20px; /* Espaciado entre los cuadros */
+    margin-bottom: 10px;
+}
+.card {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fdf4a5f3;
+}
+
+/* Encabezado azul */
+.card-header {
+    background-color: #14b17ce3;
+    height: 80px;
+    border-bottom: black;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 80%;
+    margin-top: -90px; /* Para que la imagen sobresalga del encabezado */
+    border: 4px solid black;
+    object-fit: cover;
+}
+
+/* Nombre del usuario */
+h2 {
+    font-size: 26px;
+    color: #125745;
+    margin: 5px 0;
+    font-weight: bolder;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.edit-button {
+    background-color: #3beca9;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.edit-button:hover {
+    background-color: #000000;
+}
+/* Columna derecha */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los cuadros */
+}
+
+/* Tarjeta de perfil y educación */
+.profile-card, .education-card, .connections .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    text-align: center;
+    width: 800px;
+    height: 400px;
+}
+
+.education-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Solicitudes de conexión */
+.connections .card {
+    padding: 20px;
+}
+
+.connections h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.request {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.request img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+.actions button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.actions button.decline {
+    background-color: #f44336;
+}
+
+/* Lista de Conexiones */
+.connections ul {
+    list-style: none;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.connections li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.connections li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
